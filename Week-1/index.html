@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillHub - Freelancing Marketplace</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-layer-group"></i>
+            Skill<span>Hub</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#freelancers">Find Freelancers</a>
+            <a href="#categories">Find Jobs</a>
+            <a href="#about">About</a>
+
+            <div class="nav-buttons">
+                <a href="#footer" class="login-btn">Login</a>
+                <a href="#footer" class="register-btn">Join Now</a>
+            </div>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="container hero-container">
+
+        <div class="hero-content">
+            <span class="hero-label">
+                <i class="fa-solid fa-star"></i>
+                THE FUTURE OF FREELANCING
+            </span>
+
+            <h1>
+                Find the right talent.
+                <span>Build something great.</span>
+            </h1>
+
+            <p>
+                Connect with talented freelancers, discover amazing services
+                and bring your ideas to life with SkillHub.
+            </p>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput"
+                    placeholder="Search for services or freelancers...">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div class="popular-searches">
+                <strong>Popular:</strong>
+                <a href="#categories" data-category="Web Development">Web Development</a>
+                <a href="#categories" data-category="Graphic Design">Graphic Design</a>
+                <a href="#categories" data-category="Digital Marketing">Marketing</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="hero-illustration">
+                <div class="illustration-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+
+                <div class="floating-card card-one">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Project Completed
+                </div>
+
+                <div class="floating-card card-two">
+                    <i class="fa-solid fa-users"></i>
+                    <strong>10k+</strong>
+                    <small>Freelancers</small>
+                </div>
+
+                <div class="illustration-text">
+                    <h3>Work smarter.</h3>
+                    <p>Connect. Create. Grow.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- STATS -->
+<section class="stats">
+    <div class="container stats-container">
+
+        <div class="stat-item">
+            <h2>10K+</h2>
+            <p>Talented Freelancers</p>
+        </div>
+
+        <div class="stat-item">
+            <h2>5K+</h2>
+            <p>Projects Completed</p>
+        </div>
+
+        <div class="stat-item">
+            <h2>98%</h2>
+            <p>Client Satisfaction</p>
+        </div>
+
+        <div class="stat-item">
+            <h2>50+</h2>
+            <p>Service Categories</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CATEGORIES -->
+<section class="section categories-section" id="categories">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">EXPLORE OPPORTUNITIES</span>
+            <h2>Popular Categories</h2>
+            <p>Explore services from talented professionals.</p>
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card" data-category="Web Development">
+                <div class="category-icon purple">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Websites & Applications</p>
+                <span>Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+            <div class="category-card" data-category="Graphic Design">
+                <div class="category-icon pink">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Creative Visual Designs</p>
+                <span>Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+            <div class="category-card" data-category="Mobile App Development">
+                <div class="category-icon blue">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h3>Mobile App Development</h3>
+                <p>Android & iOS Apps</p>
+                <span>Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+            <div class="category-card" data-category="Data Analysis">
+                <div class="category-icon orange">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3>Data Analysis</h3>
+                <p>Insights & Analytics</p>
+                <span>Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+            <div class="category-card" data-category="Digital Marketing">
+                <div class="category-icon green">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Grow Your Business</p>
+                <span>Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section class="section how-section" id="about">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">SIMPLE PROCESS</span>
+            <h2>How SkillHub Works</h2>
+            <p>Start your journey in just three easy steps.</p>
+        </div>
+
+        <div class="steps-grid">
+
+            <div class="step-card">
+                <div class="step-icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <span class="step-number">01</span>
+                <h3>Create Your Account</h3>
+                <p>Join our platform and create your professional profile.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <span class="step-number">02</span>
+                <h3>Find Your Match</h3>
+                <p>Explore talented freelancers and discover the right services.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-icon">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <span class="step-number">03</span>
+                <h3>Start Working</h3>
+                <p>Connect, collaborate and bring your projects to life.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- FREELANCER PREVIEW CARDS -->
+<section class="section freelancers-section" id="freelancers">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">MEET THE EXPERTS</span>
+            <h2>Featured Freelancers</h2>
+            <p>Discover professionals ready to work on your next project.</p>
+        </div>
+
+        <div class="freelancer-grid">
+
+            <div class="freelancer-card" data-category="Web Development">
+                <div class="freelancer-avatar avatar-one">AS</div>
+                <span class="freelancer-badge">Top Rated</span>
+                <h3>Alex Smith</h3>
+                <p class="profession">Web Developer</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i> 4.9
+                    <span>(120 reviews)</span>
+                </div>
+                <div class="card-divider"></div>
+                <p class="service">Modern & Responsive Websites</p>
+                <div class="freelancer-bottom">
+                    <span>Starting at <strong>$50</strong></span>
+                    <a href="#footer">View Profile</a>
+                </div>
+            </div>
+
+            <div class="freelancer-card" data-category="Graphic Design">
+                <div class="freelancer-avatar avatar-two">SJ</div>
+                <span class="freelancer-badge">Top Rated</span>
+                <h3>Sarah Johnson</h3>
+                <p class="profession">Graphic Designer</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i> 5.0
+                    <span>(98 reviews)</span>
+                </div>
+                <div class="card-divider"></div>
+                <p class="service">Branding & Creative Designs</p>
+                <div class="freelancer-bottom">
+                    <span>Starting at <strong>$35</strong></span>
+                    <a href="#footer">View Profile</a>
+                </div>
+            </div>
+
+            <div class="freelancer-card" data-category="Mobile App Development">
+                <div class="freelancer-avatar avatar-three">DM</div>
+                <span class="freelancer-badge">Verified</span>
+                <h3>David Miller</h3>
+                <p class="profession">App Developer</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i> 4.8
+                    <span>(85 reviews)</span>
+                </div>
+                <div class="card-divider"></div>
+                <p class="service">Android & iOS Applications</p>
+                <div class="freelancer-bottom">
+                    <span>Starting at <strong>$80</strong></span>
+                    <a href="#footer">View Profile</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+    <div class="container cta-content">
+        <div>
+            <span>READY TO GET STARTED?</span>
+            <h2>Turn your skills into opportunities.</h2>
+            <p>Join a growing community of talented professionals.</p>
+        </div>
+        <a href="#footer" class="cta-button">
+            Join SkillHub <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+    <div class="container footer-grid">
+
+        <div class="footer-about">
+            <a href="#home" class="logo footer-logo">
+                <i class="fa-solid fa-layer-group"></i>
+                Skill<span>Hub</span>
+            </a>
+            <p>
+                Connecting talented freelancers with opportunities.
+                Build your future with SkillHub.
+            </p>
+
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#freelancers">Freelancers</a>
+            <a href="#about">How It Works</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>For Freelancers</h3>
+            <a href="#footer">Join as Freelancer</a>
+            <a href="#footer">Create Profile</a>
+            <a href="#footer">Find Opportunities</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Contact</h3>
+            <p><i class="fa-solid fa-envelope"></i> hello@skillhub.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Available Worldwide</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2026 SkillHub. All Rights Reserved.</p>
+        <p>Designed with <i class="fa-solid fa-heart"></i> for freelancers.</p>
+    </div>
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
